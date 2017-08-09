@@ -1,0 +1,792 @@
+@font-face {
+    font-family: CoreSans;
+    src: url(fonts/CoreSansG-Thin.ttf)
+}
+
+@font-face {
+    font-family: CoreSansDark;
+    src: url(fonts/CoreSansG-Black.ttf)
+}
+
+
+@font-face {
+    font-family: CoreSansMedium;
+    src: url(fonts/CoreSansG-Medium.ttf)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background: #f5f5f5;
+    color: #67727A;
+    font-family: CoreSans;
+    margin: 0;
+}
+
+header{
+    font-family: CoreSansMedium;
+    width: 100%;
+    height: 135px;
+    background-color: white;
+}
+
+#header-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#menu-icon{
+    display: none;
+}
+
+a:hover#menu-icon{
+    border-radius: 4px 4px 0 0;
+}
+
+
+#header-logo{
+    font-family: CoreSansDark;
+    color: #500D1E;
+    float: left;
+    text-align: center;
+    padding: 10px 0px 0px 15%;
+}
+
+#header-logo h1{
+    font-size: 160%;
+}
+#header-logo h3{
+    font-size: 60%;
+}
+
+/*----- Start Navigation ----- */
+
+/* header-number + header-numbers padding right needs to add up to the nav and list item padding right. */
+#header-numbers{
+    font-size: 80%;
+    float:right;
+    padding-right: 20%;
+
+}
+.header-number{
+    display: inline;
+    float: left;
+    margin: 0 15px 0 15px;
+    padding: 5px 0 0 0;
+}
+
+.header-number p{
+    color: #4D9258;
+    text-align: center;
+    margin: 2px 0 3px 0;
+}
+.header-number p.phone-number{
+    color: #500D1E;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+nav{
+    float: right;
+    clear: right;
+    padding: 43px 20% 0 0;
+}
+
+/*----- We want to make it move anything on the right more away from the center as the screen is smaller -----*/
+@media screen and (max-width: 1400px){
+    #header-numbers{
+        padding-right: 15%;
+    }
+    nav{
+        padding-right: 15%;
+    }
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+
+nav ul li {
+    font-size: 90%;
+    display: inline-block;
+    float: left;
+    padding: 10px 14px 10px 14px;
+    font-weight: bold;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #500D1E;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: #4D9258;
+}
+
+/*----- End Navigation ----- */
+
+
+
+
+/*----- Start About Section ----- */
+
+#about{
+    color: #500D1E;
+    height: 548px;
+}
+
+#about .wrapper h1{
+    font-size: 400%;
+    padding: 160px 0 20px 0;
+}
+
+#about .wrapper h2{
+    font-size: 150%;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0px 0 40px 0;
+}
+
+#about .wrapper button{
+    background-color: #4D9258;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-bottom: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+/*----- Finish About Section ----- */
+
+
+
+/*----- Start Product Section ----- */
+#products .wrapper{
+    width: 100%;
+    background-color: #500D1E;
+    margin-bottom: 10px;
+}
+
+#products .wrapper h3{
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    padding: 90px 0 90px 0;
+
+}
+/* ----- End Product Section ----- */
+
+
+
+
+
+
+
+
+/* ----- Start Services Section ----- */
+
+#services{
+    clear: both;
+    padding-top: 60px;
+    outline: 1px solid rgba(0, 0, 0, .15);
+}
+
+#services section{
+    float: right;
+}
+
+#services img{
+    height: 100px;
+    width: auto;
+    fill: darkred;
+    margin: 0px 0 50px 0;
+}
+
+.service{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+.service h3{
+    font-size: 200%;
+    color: #4D9258;
+    margin: 10px 0 10px 0;
+}
+
+.service p{
+    font-size: 70%;
+}
+
+
+#services button{
+    margin-top: 30px;
+    background-color: #4D9258;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-bottom: 70px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* ----- End Services Section ----- */
+
+
+
+
+
+
+
+/* ----- Start Contact Section ----- */
+#contacts{
+    padding-top: 60px;
+    outline: 1px solid rgba(0, 0, 0, .15);
+}
+
+
+#contacts img{
+    height: 100px;
+    width: auto;
+    fill: darkred;
+    margin: 0px 0 50px 0;
+
+}
+
+
+#contacts section{
+    float: left;
+}
+
+.contact{
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 30px;
+
+}
+
+#contacts .contact img{
+    padding-top: 3px;
+    vertical-align:top;
+    display: inline-block;
+    width: 30px;
+    height: auto;
+}
+
+.contact-info{
+    padding-left: 10px;
+    display: inline-block;
+    margin-bottom:25px;
+}
+.contact-info h3{
+    font-size: 200%;
+    color: #4D9258;
+    padding-bottom: 18px;
+}
+
+.contact div p{
+    display: inline;
+}
+
+.contact-type{
+    color: #4D9258;
+    font-size: 100%;
+}
+
+.contact-data{
+    padding-left: 10px;
+    font-size: 100%;
+}
+
+
+
+/* ----- End Contact Section ----- */
+
+
+
+
+
+/* ----- Start Footer Section ----- */
+
+footer{
+    font-family: CoreSansMedium;
+    background-color: #500D1E;
+    width: 100%;
+    text-align: center;
+}
+
+#footer-logo{
+
+    color: #4D9258;
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+#footer-logo h1{
+    font-family: CoreSansDark;
+    font-size: 180%;
+}
+#footer-logo h3{
+    font-size: 70%;
+}
+
+
+footer h4{
+    font-size: 80%;
+    color: white;
+}
+
+footer p{
+    padding: 40px 0 40px 0;
+    font-size: 60%;
+    color: #dbd1dd;
+}
+
+
+
+/* ----- End Footer Section ------ */
+
+
+
+/*----- Column Class Names ----- */
+
+
+.full-large{
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.half-large{
+    width: 50%;
+    display: table-cell;
+    text-align: center;
+    vertical-align:top;
+}
+
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-service-wrapper{
+    display: table;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ---- Other styles ----- */
+.green{
+    color: #4D9258;
+}
+
+
+
+
+
+/*---------------- MEDIA QUERIES --------------- */
+@media screen and (max-width: 768px){
+    .full-small{
+        width: 100%;
+        display: block;
+    }
+
+    /* ----- Start Media Query for About ----- */
+
+    #about .wrapper h1{
+        padding-top: 80px;
+    }
+
+    /*----- Start Media Query for Services ----- */
+    #services{
+        clear: both;
+        padding-top: 60px;
+    }
+
+    #services section{
+        float: none;
+    }
+
+    #services img{
+        height: 100px;
+        width: auto;
+        fill: darkred;
+        margin: 0px 0 40px 0;
+    }
+
+    .service{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .service h3{
+        font-size: 200%;
+        color: #4D9258;
+        margin: 10px 0 10px 0;
+    }
+
+    .service p{
+        font-size: 80%;
+    }
+
+
+    #services button{
+        margin-top: 30px;
+        background-color: #4D9258;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        margin-bottom: 70px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        width: 50%
+    }
+    /*------ End Media Query for Services -----*/
+
+
+
+
+    /*----- Start Media Query for Contact ----- */
+    #contacts{
+        text-align: center;
+        padding-top: 60px;
+    }
+
+
+    #contacts img{
+        height: 100px;
+        width: auto;
+        fill: darkred;
+        margin: 0px 0 40px 0;
+
+    }
+
+    #contacts section{
+        float: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .contact{
+        text-align: justify;
+        width: auto;
+        margin-top: 10px;
+    }
+
+    .contact-inner{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #contacts .contact img{
+        padding-top: 0px;
+        vertical-align:top;
+        display: inline-block;
+        width: 30px;
+        height: auto;
+    }
+
+    .contact-info{
+        padding-left: 10px;
+        display: inline-block;
+        margin-bottom:25px;
+    }
+    .contact-info h3{
+        font-size: 150%;
+        color: #4D9258;
+        padding-bottom: 5px;
+    }
+
+    .contact div p{
+        display: inline;
+    }
+
+    .contact-type{
+        color: #4D9258;
+        font-size: 100%;
+    }
+
+    .contact-data{
+        padding-left: 10px;
+        font-size: 100%;
+    }
+
+
+
+}
+
+
+
+/*----- media query for hiding header ----- */
+@media screen and (max-width: 900px) {
+
+    header {
+        position: absolute;
+        height: 100px;
+    }
+
+    #about{
+        padding-top: 100px;
+    }
+
+    #header-numbers{
+        float: none;
+        margin: 0 auto;
+        display: inline-block;
+        padding-right: 0;
+    }
+
+    #menu-icon{
+        width: 40px;
+        height: 40px;
+        background: url(images/nav.png) center no-repeat;
+        background-size: contain;
+        padding-right: 0px;
+        margin-top: 20px;
+        margin-right: 20px;
+        float: right;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        color: white;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.active {
+        display: block;
+        z-index: 1000;
+        position:absolute;
+        padding: 25px;
+        background: #500D1E;
+        right: 20px;
+        border: 1px solid #FFF;
+        top:60px;
+        border-radius: 10px 0 10px 10px;
+        width: 40%;
+        animation: dropdown 1s ease-in-out 0s 1;
+    }
+
+
+    nav ul.deactivate{
+        animation: dropup 1s ease-in-out 0s 1;
+    }
+
+
+    nav ul li a{
+        color: white;
+    }
+
+    nav ul li a:hover{
+        color: #67727A;
+    }
+
+    #header-inner{
+        height: 100%;
+    }
+
+    #header-logo{
+        display: inline-block;
+        float: none;
+        padding-left: 40px;
+    }
+
+    /*--- dont need the descriptions for the logo if the screen is small ----- */
+    #header-logo h1{
+        display: none;
+    }
+    #header-logo h3{
+        display: none;
+    }
+
+
+
+
+}
+
+
+
+/* ----- Start CSS for the slideshow ------ */
+
+#slidejoe{
+    height: 100%;
+}
+
+.slide{
+    height: 100%;
+    display: none;
+
+}
+
+.slide1{
+    height: 100%;
+
+    background: url('images/slide1.jpg') no-repeat center center;
+}
+.slide2{
+    height: 100%;
+
+    background: url('images/slide2.jpg') no-repeat center center;
+}
+.slide3{
+    height: 100%;
+
+    background: url('images/slide3.jpg') no-repeat center center;
+}
+
+#active-slide {
+    height: 100%;
+
+    display: block;
+    animation: slideAnimation 1s ease-in-out 0s 1;
+}
+
+.scrollers{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: -50px;
+}
+
+.scroll-button{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+
+    /* if the svg fails, itll still have the png */
+    background: url('images/inactive-scroll.png') no-repeat center center;
+    background: url('images/inactive-scroll.svg') no-repeat center center;
+
+    background-size: 20px 20px;
+    cursor: pointer;
+
+}
+#active-scroll-button {
+    background: url('images/active-scroll.svg') no-repeat center center;
+    background: url('images/active-scroll.png') no-repeat center center;
+
+    background-size: 20px 20px;
+}
+
+
+/*---------------- MEDIA QUERIES --------------- */
+@media screen and (max-width: 500px) {
+
+
+    /*---- Start Media Query for Header ----- */
+    #header-numbers{
+        float: none;
+        margin: 0 auto;
+        display: inline-block;
+        padding-left: 5%;
+    }
+
+    .header-number{
+        display: block;
+        padding: 0;
+        margin: 0 auto;
+        float: none;
+    }
+
+
+    /*----- End Media Query for Header ----- */
+
+
+
+    /* ----- Start Media Query for About ----- */
+    #about .wrapper h1 {
+        font-size: 170%;
+        padding-top: 30px;
+    }
+
+    #about .wrapper h2 {
+        font-size: 120%;
+        width: 90%;
+    }
+
+    #about{
+        height: 300px;
+    }
+
+
+    #about .wrapper button{
+        margin-bottom: 0px;
+    }
+    /* ----- End Media Query for About ----- */
+
+
+    #active-slide{
+        animation: slidePanning 50s infinite linear;
+    }
+}
+
+
+@keyframes slideAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+
+}
+
+
+@keyframes dropdown {
+    from{
+        top: 0;
+    }
+    to{
+        top: 60px;
+    }
+}
+
+
+@keyframes slidePanning {
+0% {
+    background-position: 0% 0%;
+}
+25% {
+    background-position: 50% 100%;
+}
+50% {
+    background-position: 100% 0%;
+}
+75% {
+    background-position: 50% 100%;
+}
+100% {
+    background-position: 0% 0%;
+}
+}
+
+
