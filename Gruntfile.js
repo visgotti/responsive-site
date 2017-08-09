@@ -12,9 +12,19 @@ module.exports = function(grunt){
                 tasks:['concat:js'],
             }
         },
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    hostname: '*',
+                    keepalive: true
+                }
+            }
+        }
     })
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.registerTask('default', ['concat', 'watch']);
 }
