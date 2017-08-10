@@ -9,10 +9,10 @@ class SlideJoe{
     }
 
     // this function finds all the elements in our html code with the class slide
-    // and pushes it to an array for us to index within the class. it also sets
+    // and pushes it to an array for us to index within the class. it also sets the first
+    // in the array to active.
     getSlides(){
         let slides = document.getElementsByClassName('slide')
-        // start with 1 since we already did the first slide.
         for(var i = 0; i < slides.length; i++){
             let currentSlide = slides[i];
             this.slides.push(currentSlide)
